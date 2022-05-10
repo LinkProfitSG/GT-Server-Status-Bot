@@ -23,7 +23,7 @@ for (ENetPeer* peers = server->peers; peers < &server->peers[server->peerCount];
 }
 
 nlohmann::json json;
-json["onlinePlayers] = totalPlayers;
+json["onlinePlayers"] = totalPlayers;
 
 std::ofstream fstream("path/to/players.json");
 fstream << json;
